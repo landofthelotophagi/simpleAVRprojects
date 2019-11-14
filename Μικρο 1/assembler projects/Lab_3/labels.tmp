@@ -1,0 +1,47 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.12</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Users\Jafou\Documents\avr studio workspace\Lab_3</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <RESET><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>15</LINE></RESET>
+  <LOOP><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>31</LINE></LOOP>
+  <LOOP2><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>63</LINE></LOOP2>
+  <CONT_1><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>81</LINE></CONT_1>
+  <CONT_1_1><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>92</LINE></CONT_1_1>
+  <CONT_1_0><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>87</LINE></CONT_1_0>
+  <DELAY_1sec><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>197</LINE></DELAY_1sec>
+  <SECS8><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>103</LINE></SECS8>
+  <SECS12><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>106</LINE></SECS12>
+  <SECS24><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>109</LINE></SECS24>
+  <SECS30><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>112</LINE></SECS30>
+  <CONT_2><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>115</LINE></CONT_2>
+  <CONT_3><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>135</LINE></CONT_3>
+  <CONT_3_0><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>130</LINE></CONT_3_0>
+  <FAR_END><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>257</LINE></FAR_END>
+  <DOOR_OPEN><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>143</LINE></DOOR_OPEN>
+  <DELAY_1sec_2><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>232</LINE></DELAY_1sec_2>
+  <LOOP3><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>188</LINE></LOOP3>
+  <OVERLOAD><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>158</LINE></OVERLOAD>
+  <NO_WATER><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>173</LINE></NO_WATER>
+  <outer_loop><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>205</LINE></outer_loop>
+  <inner_loop><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>217</LINE></inner_loop>
+  <outer_loop2><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>240</LINE></outer_loop2>
+  <inner_loop2><FILE>C:\Users\Jafou\Documents\avr studio workspace\Lab_3\Lab_3.asm</FILE><LINE>243</LINE></inner_loop2>
+ </LABELS>
+</ASSEMBLER_INFO>

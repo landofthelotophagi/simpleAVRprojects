@@ -1,0 +1,302 @@
+.include "m16def.inc"
+
+
+.def temp=r16
+.def code1=r17
+.def code2=r18
+.def code3=r19
+.def code4=r20
+.def flag=r21
+.def counter=r22
+.def temp2=r23
+.def inner_count_L=R24 
+.def inner_count_H=R25
+.def outer_count_L=R26 ; (XL)
+.def outer_count_H=R27 ; (XH)
+
+.org $100
+
+reset:
+    ldi temp,LOW(RAMEND) ;arxikopoiisti stack pointer
+    out SPL,temp
+	ldi temp,HIGH(RAMEND)
+	out SPH,temp
+	ser temp
+	out DDRB,temp ;DDRB ws thyra eksodou
+	out PORTB,temp
+	clr temp
+	out DDRD,temp ;DDRD ws thyra eisodou
+	
+
+ch_sw:
+   	in temp,PIND
+	cpi temp, 0b11110000 ;if sw0-sw3=on
+	breq save_code1
+	rjmp ch_sw
+
+	
+save_code1:	
+	in temp,PIND
+	cpi temp, 0b11111111
+	breq save_code1
+	;rcall DLY
+	;rcall check_correct
+	mov code1,temp 
+	
+
+save_code2:
+	in temp,PIND
+	cpi temp, 0b11111111
+	breq save_code2
+	;rcall DLY
+	;rcall check_correct
+	mov code2,temp	
+
+save_code3:
+	in temp,PIND
+	cpi temp, 0b11111111
+	breq save_code3
+	;rcall DLY
+	;rcall check_correct
+	mov code3,temp
+	
+
+save_code4:
+	in temp,PIND
+	cpi temp, 0b11111111
+	breq save_code4
+	;rcall DLY
+	;rcall check_correct
+	mov code4,temp
+	rjmp ch_sw7
+	
+check_correct:
+	cpi temp,0b11101111
+	breq save_code1
+	cpi temp,0b11011111
+	breq save_code1
+	cpi temp,0b10111111
+	breq save_code1
+	cpi temp,0b01111111
+	breq save_code1
+	ret
+
+DLY:
+	in temp2, PIND
+	cpi temp2,0b11111111
+	brne DLY
+	ret
+
+ch_sw7:
+	in temp,PIND
+	;rcall DLY
+	cpi temp,0b01111111
+	breq main
+	rjmp ch_sw7
+
+main: 
+    in temp,PIND
+	;rcall DLY
+	cpi temp,0b1111110
+	breq main
+	rjmp led0_on
+
+led0_on:
+	ldi temp, 0b1111110
+	out PORTB, temp
+	ldi counter,0
+	ldi flag,0
+	
+
+ch_code1:
+	rcall inc_counter
+	in temp,PIND
+	;rcall DLY 
+	cp temp,code1
+	brne alarm
+	breq ch_code2
+	cpi counter, 10
+	breq alarm
+	rjmp ch_code1
+			
+
+ch_code2:
+	rcall inc_counter
+	in temp,PIND
+	;rcall DLY 
+	cp temp,code2
+	brne alarm
+	breq ch_code3
+	cpi counter, 10
+	breq alarm
+	rjmp ch_code2
+
+ch_code3:
+	rcall inc_counter
+	in temp,PIND
+	;rcall DLY 
+	cp temp,code3
+	brne alarm
+	breq ch_code4
+	cpi counter, 10
+	breq alarm
+	rjmp ch_code3
+
+ch_code4:
+	rcall inc_counter
+	in temp,PIND
+	;rcall DLY 
+	cp temp,code4
+	brne alarm
+	breq finish
+	cpi counter, 10
+	breq alarm
+	rjmp ch_code4
+
+alarm:
+	inc flag
+    	ldi counter, 0
+	cpi flag, 1
+	breq alarm_1
+	cpi flag, 2 
+	breq alarm_2
+	
+
+alarm_1:
+	ldi temp, 0b11111111
+	out PORTB, temp
+	rcall time_delay_1s
+	ldi temp, 0b11111110
+	out PORTB, temp
+	in temp, PIND
+	;rcall DLY
+	cpi temp,0b11111111
+	brne ch_code1
+	rjmp alarm_1
+	
+alarm_2:
+	clr temp
+	out PORTB, temp
+	rcall time_delay_1s
+	ser temp
+	out PORTB, temp
+    	rcall time_delay_1s
+	brne ch_code1
+	rjmp alarm_2
+
+inc_counter:
+	rcall time_delay_05s
+	inc counter
+	ret
+
+time_delay_05s:
+	          ldi outer_count_L, $78	; 1 cycle
+	          ldi outer_count_H, $02	; 1 cycle
+              outer_loop2:
+			  ldi inner_count_L, $78	; 1 cycle
+	          ldi inner_count_H, $02	; 1 cycle
+              inner_loop2:
+	          nop				; 1 cycle, possible use of more "nop" instructions for longer delays
+	          sbiw inner_count_L, 1	; 2 cycles
+	          brne inner_loop2			; 2 cycles if true (Ni-1 times), 1 cycle if false
+	          sbiw outer_count_L, 1		; 2 cycles
+              brne outer_loop2 			; 2 cycles if true (No-1 times), 1 cycle if false
+	          ret						; 4 cycles (plus 3 cycles for rcall)
+
+
+time_delay_1s:
+	          ldi outer_count_L, $FE	; 1 cycle
+	          ldi outer_count_H, $03	; 1 cycle
+              outer_loop3:
+			  ldi inner_count_L, $FE	; 1 cycle
+	          ldi inner_count_H, $03	; 1 cycle
+              inner_loop3:		
+	          nop						; 1 cycle, possible use of more "nop" instructions for longer delays
+	          sbiw inner_count_L, 1		; 2 cycles
+	          brne inner_loop3			; 2 cycles if true (Ni-1 times), 1 cycle if false
+	          sbiw outer_count_L, 1		; 2 cycles
+              brne outer_loop3 			; 2 cycles if true (No-1 times), 1 cycle if false
+	          ret						; 4 cycles (c   s 3 cycl
+
+
+
+normal:
+    ldi temp, 0b11111100
+	out PORTB, temp
+
+
+
+ch_vio:
+	in temp,PIND
+	cpi temp, 0b11111101
+	;rcall DLY
+	breq led2on
+	in temp,PIND
+	cpi temp, 0b11111011
+	;rcall DLY
+	breq led3_2on
+	in temp,PIND
+	cpi temp, 0b11100111
+	;rcall DLY
+	breq led4_2on
+	in temp,PIND
+	cpi temp, 0b11011111
+	;rcall DLY
+	breq led5_2on
+	in temp,PIND
+	cpi temp, 0b10111111
+	;rcall DLY
+	breq led6_2on
+	in temp,PIND
+	cpi temp, 0b01111111
+	;rcall DLY
+	breq led7_2on
+	rjmp ch_vio
+
+sw0_normal:
+    in temp, PIND
+	cpi temp, 0b11111110
+	;rcall DLY
+	breq normal
+	rjmp sw0_normal
+
+led2on:
+	ldi temp, 0b11111011
+	out PORTB, temp
+	rjmp sw0_normal
+
+led3_2on:
+	ldi temp, 0b11110011
+	out PORTB, temp
+	rjmp sw0_normal
+
+led4_2on:
+	ldi temp, 0b11101011
+	out PORTB, temp
+	rjmp sw0_normal
+
+led5_2on:
+	ldi temp, 0b11011011
+	out PORTB, temp
+	rjmp sw0_normal
+
+led6_2on:
+	ldi temp, 0b10111011
+	out PORTB, temp
+	rjmp sw0_normal
+
+led7_2on:
+	ldi temp, 0b01111011
+	out PORTB, temp
+	rjmp sw0_normal
+
+finish:
+	jmp end
+
+
+
+
+
+
+
+

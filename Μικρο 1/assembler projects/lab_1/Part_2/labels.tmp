@@ -1,0 +1,51 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>Unknown</DEVICE>
+ <WORKING_DIR>C:\Assembler projects\Lab_1\Part_2</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <RESET><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>16</LINE></RESET>
+  <AEMs_COMP><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>24</LINE></AEMs_COMP>
+  <AEMs_table><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>243</LINE></AEMs_table>
+  <COMP><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>28</LINE></COMP>
+  <PART_1_3><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>38</LINE></PART_1_3>
+  <First_AEM_Greater><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>50</LINE></First_AEM_Greater>
+  <Second_AEM_Greater><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>43</LINE></Second_AEM_Greater>
+  <ODD_OR_EVEN><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>58</LINE></ODD_OR_EVEN>
+  <LOOP><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>68</LINE></LOOP>
+  <LOOP2><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>85</LINE></LOOP2>
+  <SWITCH_PRESSED><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>90</LINE></SWITCH_PRESSED>
+  <SW0_PRESSED><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>107</LINE></SW0_PRESSED>
+  <SW1_PRESSED><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>130</LINE></SW1_PRESSED>
+  <SW2_PRESSED><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>153</LINE></SW2_PRESSED>
+  <SW3_PRESSED><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>176</LINE></SW3_PRESSED>
+  <SW7_PRESSED><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>102</LINE></SW7_PRESSED>
+  <FAR_END><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>240</LINE></FAR_END>
+  <First_AEM_bigger_SW0><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>119</LINE></First_AEM_bigger_SW0>
+  <Second_AEM_bigger_SW0><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>109</LINE></Second_AEM_bigger_SW0>
+  <END><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>201</LINE></END>
+  <First_AEM_bigger_SW1><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>142</LINE></First_AEM_bigger_SW1>
+  <Second_AEM_bigger_SW1><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>132</LINE></Second_AEM_bigger_SW1>
+  <First_AEM_smaller_SW2><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>165</LINE></First_AEM_smaller_SW2>
+  <Second_AEM_smaller_SW2><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>155</LINE></Second_AEM_smaller_SW2>
+  <First_AEM_smaller_SW3><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>188</LINE></First_AEM_smaller_SW3>
+  <Second_AEM_smaller_SW3><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>178</LINE></Second_AEM_smaller_SW3>
+  <TIME_DEL_A><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>212</LINE></TIME_DEL_A>
+  <outer_loop><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>215</LINE></outer_loop>
+  <inner_loop><FILE>C:\Assembler projects\Lab_1\Part_2\Part_2.asm</FILE><LINE>218</LINE></inner_loop>
+ </LABELS>
+</ASSEMBLER_INFO>

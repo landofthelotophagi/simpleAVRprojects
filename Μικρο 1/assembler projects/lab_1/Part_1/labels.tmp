@@ -1,0 +1,34 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>Unknown</DEVICE>
+ <WORKING_DIR>C:\Assembler projects\Lab_1\Part_1</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Assembler projects\Lab_1\Part_1\Part_1.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Assembler projects\Lab_1\Part_1\Part_1.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Assembler projects\Lab_1\Part_1\Part_1.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Assembler projects\Lab_1\Part_1\Part_1.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <RESET><FILE>C:\Assembler projects\Lab_1\Part_1\Part_1.asm</FILE><LINE>16</LINE></RESET>
+  <AEMs_COMP><FILE>C:\Assembler projects\Lab_1\Part_1\Part_1.asm</FILE><LINE>24</LINE></AEMs_COMP>
+  <AEMs_table><FILE>C:\Assembler projects\Lab_1\Part_1\Part_1.asm</FILE><LINE>111</LINE></AEMs_table>
+  <COMP><FILE>C:\Assembler projects\Lab_1\Part_1\Part_1.asm</FILE><LINE>28</LINE></COMP>
+  <PART_1_3><FILE>C:\Assembler projects\Lab_1\Part_1\Part_1.asm</FILE><LINE>80</LINE></PART_1_3>
+  <TIME_DEL_A1><FILE>C:\Assembler projects\Lab_1\Part_1\Part_1.asm</FILE><LINE>59</LINE></TIME_DEL_A1>
+  <outer_loop1><FILE>C:\Assembler projects\Lab_1\Part_1\Part_1.asm</FILE><LINE>62</LINE></outer_loop1>
+  <inner_loop1><FILE>C:\Assembler projects\Lab_1\Part_1\Part_1.asm</FILE><LINE>65</LINE></inner_loop1>
+  <First_AEM_Greater><FILE>C:\Assembler projects\Lab_1\Part_1\Part_1.asm</FILE><LINE>91</LINE></First_AEM_Greater>
+  <Second_AEM_Greater><FILE>C:\Assembler projects\Lab_1\Part_1\Part_1.asm</FILE><LINE>84</LINE></Second_AEM_Greater>
+  <ODD_OR_EVEN><FILE>C:\Assembler projects\Lab_1\Part_1\Part_1.asm</FILE><LINE>99</LINE></ODD_OR_EVEN>
+  <FAR_END><FILE>C:\Assembler projects\Lab_1\Part_1\Part_1.asm</FILE><LINE>108</LINE></FAR_END>
+ </LABELS>
+</ASSEMBLER_INFO>

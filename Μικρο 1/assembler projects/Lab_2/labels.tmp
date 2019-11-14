@@ -1,0 +1,45 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Assembler projects\Lab_2</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Assembler projects\Lab_2\Lab_2.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Assembler projects\Lab_2\Lab_2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Assembler projects\Lab_2\Lab_2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Assembler projects\Lab_2\Lab_2.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <RESET><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>13</LINE></RESET>
+  <ADD_AEMs><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>62</LINE></ADD_AEMs>
+  <Cont2><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>79</LINE></Cont2>
+  <Cont><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>75</LINE></Cont>
+  <LOOP><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>93</LINE></LOOP>
+  <LOOP2><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>122</LINE></LOOP2>
+  <SWITCH1_PRESSED><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>127</LINE></SWITCH1_PRESSED>
+  <Display_next_digit1><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>130</LINE></Display_next_digit1>
+  <TIME_DEL_A><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>244</LINE></TIME_DEL_A>
+  <LOOP3><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>141</LINE></LOOP3>
+  <LOOP4><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>170</LINE></LOOP4>
+  <SWITCH2_PRESSED><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>175</LINE></SWITCH2_PRESSED>
+  <Display_next_digit2><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>178</LINE></Display_next_digit2>
+  <LOOP5><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>192</LINE></LOOP5>
+  <LOOP6><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>226</LINE></LOOP6>
+  <SWITCH3_PRESSED><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>231</LINE></SWITCH3_PRESSED>
+  <TIME_DEL_B><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>271</LINE></TIME_DEL_B>
+  <FAR_END><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>296</LINE></FAR_END>
+  <outer_loop><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>252</LINE></outer_loop>
+  <inner_loop><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>255</LINE></inner_loop>
+  <outer_loop_b><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>279</LINE></outer_loop_b>
+  <inner_loop_b><FILE>C:\Assembler projects\Lab_2\Lab_2.asm</FILE><LINE>282</LINE></inner_loop_b>
+ </LABELS>
+</ASSEMBLER_INFO>
